@@ -1,6 +1,7 @@
 
 <%= link_to "Back to Picture", pictures_url %>
-| <%= link_to "Edit me!!!", edit_picture_path(@picture) %> 
+| <%= link_to "Edit me!", edit_picture_path(@picture) %> |
+<%= link_to "Delete", delete_picture_path(@picture), method: :delete, data: {confirm: "Are you for real?!?\n...Fuck you too!"}%>
 
 <p><%= @picture.title %>, <%= @picture.artist %></p>
 <%= image_tag @picture.url %>
