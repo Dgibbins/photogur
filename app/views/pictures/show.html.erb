@@ -1,5 +1,6 @@
 
 <%= link_to "Back to Picture", pictures_url %>
+| <%= link_to "Edit me!!!", edit_picture_path(@picture) %> 
 
 <p><%= @picture.title %>, <%= @picture.artist %></p>
 <%= image_tag @picture.url %>
